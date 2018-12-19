@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 	Conta primeiraConta = new Conta();
         primeiraConta.titular = new Cliente();
-        primeiraConta.titular.nome = "Joao de Araujo Corral"; //Add Novo nome
+        primeiraConta.titular.nome = "Edson de Araujo Corral"; //Voltar o Edson
         primeiraConta.titular.cpf = "066.202.869.41";
         primeiraConta.titular.profissao = "Adm de Redes";
         primeiraConta.setAgencia(3323);
