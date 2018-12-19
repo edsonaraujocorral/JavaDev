@@ -4,7 +4,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	Conta primeiraConta = new Conta();
+    	Conta primeiraConta = new Conta();
         primeiraConta.titular = new Cliente();
         primeiraConta.titular.nome = "Edson de Araujo Corral"; //Voltar o Edson
         primeiraConta.titular.cpf = "066.202.869.41";
@@ -18,5 +18,15 @@ public class Main {
                 " Profissao: " + primeiraConta.titular.profissao);
         System.out.println("Agencia: " + primeiraConta.getAgencia() + " Numero: " + primeiraConta.getNumero());
         System.out.println("SALDO: R$" + primeiraConta.getSaldo());
+
+        Conta segundaConta = new Conta();
+        segundaConta.titular = new Cliente();
+        segundaConta.titular.nome = "Joao de Araujo";
+        segundaConta.titular.cpf = "044.334.322.23";
+        segundaConta.titular.profissao = "Engenheiro de Software";
+        segundaConta.setAgencia(3323);
+        segundaConta.setNumero(213423423);
+
+        segundaConta.deposita(1500);
     }
 }
