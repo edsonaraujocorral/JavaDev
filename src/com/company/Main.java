@@ -11,7 +11,8 @@ public class Main {
         primeiraConta.titular.profissao = "Adm de Redes";
         primeiraConta.setAgencia(3323);
         primeiraConta.setNumero(232434545);
-        primeiraConta.deposito(1500);
+
+        primeiraConta.deposito(2500); //add R$2500
 
         System.out.println("Nome: " + primeiraConta.titular.nome + " CPF: " + primeiraConta.titular.cpf +
                 " Profissao: " + primeiraConta.titular.profissao);
