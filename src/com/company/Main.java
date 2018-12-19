@@ -17,21 +17,6 @@ public class Main {
                 " Profissao: " + primeiraConta.titular.profissao);
         System.out.println("Agencia: " + primeiraConta.getAgencia() + " Numero: " + primeiraConta.getNumero());
         System.out.println("SALDO: R$" + primeiraConta.getSaldo());
-	
-
-	Conta segundaConta = new Conta();
-	segundaConta.titular = new Cliente();
-	segundaConta.titular.nome = "Edson de Araujo Corral 2";
-	segundaConta.titular.cpf = "066.202.584.15";
-	segundaConta.titular.profissao = "Programador Java";
-	segundaConta.setAgencia(3322);
-	segundaConta.setNumero(23232343);
-	segundaConta.deposita(1500);
-	
-	System.out.println("Nome: " + segundaConta.titular.nome + " CPF: " + segundaConta.titular.cpf + 
-			" Profissao: " + segundaConta.titular.profissao);
-	System.out.println("Agencia: " + segundaConta.getAgencia() + " Numero: " + segundaConta.getNumero());
-	System.out.println("SALDO: R$" + segundaConta.getSaldo()); 
 
     }
 }
