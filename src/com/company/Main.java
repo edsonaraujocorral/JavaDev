@@ -29,9 +29,11 @@ public class Main {
 
         segundaConta.deposita(1500);
 
-	//Print
-	System.out.println("Nome: " + segundaConta.titular.nome + " CPF: " + segundaConta.titular.cpf + 
+	    //Print
+	    System.out.println("Nome: " + segundaConta.titular.nome + " CPF: " + segundaConta.titular.cpf +
 			" Profissao: " + segundaConta.titular.profissao);
 
+	    System.out.println("Agencia: " + segundaConta.getAgencia() + " Numero: " + segundaConta.getNumero());
+	    System.out.println("SALDO: R$" + segundaConta.getSaldo());
     } 
 }
