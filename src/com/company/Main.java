@@ -12,7 +12,7 @@ public class Main {
         primeiraConta.setAgencia(3323);
         primeiraConta.setNumero(232434545);
 
-        primeiraConta.deposito(2500); //add R$2500
+        primeiraConta.deposita(2500); //add R$2500
 
         System.out.println("Nome: " + primeiraConta.titular.nome + " CPF: " + primeiraConta.titular.cpf +
                 " Profissao: " + primeiraConta.titular.profissao);
@@ -28,5 +28,10 @@ public class Main {
         segundaConta.setNumero(213423423);
 
         segundaConta.deposita(1500);
-    }
+
+	//Print
+	System.out.println("Nome: " + segundaConta.titular.nome + " CPF: " + segundaConta.titular.cpf + 
+			" Profissao: " + segundaConta.titular.profissao);
+
+    } 
 }
