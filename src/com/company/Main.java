@@ -4,9 +4,9 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Conta primeiraConta = new Conta();
+	Conta primeiraConta = new Conta();
         primeiraConta.titular = new Cliente();
-        primeiraConta.titular.nome = "Edson de Araujo Corral";
+        primeiraConta.titular.nome = "Joao de Araujo Corral"; //Add Novo nome
         primeiraConta.titular.cpf = "066.202.869.41";
         primeiraConta.titular.profissao = "Adm de Redes";
         primeiraConta.setAgencia(3323);
