@@ -19,21 +19,5 @@ public class Main {
         System.out.println("Agencia: " + primeiraConta.getAgencia() + " Numero: " + primeiraConta.getNumero());
         System.out.println("SALDO: R$" + primeiraConta.getSaldo());
 
-        Conta segundaConta = new Conta();
-        segundaConta.titular = new Cliente();
-        segundaConta.titular.nome = "Joao de Araujo";
-        segundaConta.titular.cpf = "044.334.322.23";
-        segundaConta.titular.profissao = "Engenheiro de Software";
-        segundaConta.setAgencia(3323);
-        segundaConta.setNumero(213423423);
-
-        segundaConta.deposita(1500);
-
-	    //Print
-	    System.out.println("Nome: " + segundaConta.titular.nome + " CPF: " + segundaConta.titular.cpf +
-			" Profissao: " + segundaConta.titular.profissao);
-
-	    System.out.println("Agencia: " + segundaConta.getAgencia() + " Numero: " + segundaConta.getNumero());
-	    System.out.println("SALDO: R$" + segundaConta.getSaldo());
-    } 
+    }
 }
