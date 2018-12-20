@@ -7,18 +7,19 @@ public class Conta {
     private int agencia;
     private int numero;
     Cliente titular;
+    private static int total; //atributo da classe
 
     //Construtor
     public Conta(int agencia, int numero) {
+        Conta.total++;
+        //System.out.println("O total de objetos criados: " + Conta.total);
+
         if(agencia >= 0 && numero >= 0) {
             this.agencia = agencia;
             this.numero = numero;
         } else {
             System.out.println("Agencia e Numero incompativeis");
         }
-    }
-    public Conta(){
-       //Construtor padrao
     }
 
     public void deposita(double valor) {
@@ -62,4 +63,7 @@ public class Conta {
         this.agencia = agencia;
     }
 
+    public static int getTotal() {
+        return Conta.total;
+    }
 }
