@@ -8,6 +8,19 @@ public class Conta {
     private int numero;
     Cliente titular;
 
+    //Construtor
+    public Conta(int agencia, int numero) {
+        if(agencia >= 0 && numero >= 0) {
+            this.agencia = agencia;
+            this.numero = numero;
+        } else {
+            System.out.println("Agencia e Numero incompativeis");
+        }
+    }
+    public Conta(){
+       //Construtor padrao
+    }
+
     public void deposita(double valor) {
         this.saldo += valor;
     }
